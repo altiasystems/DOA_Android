@@ -118,8 +118,8 @@ startDOA(JNIEnv *env,
 
     zdl::DlSystem::Runtime_t runtimeTarget;
     if (srunTime == "DSP") runtimeTarget = zdl::DlSystem::Runtime_t::DSP;
-    else if (srunTime == "GPU") runtimeTarget == zdl::DlSystem::Runtime_t::GPU;
-    else runtimeTarget == zdl::DlSystem::Runtime_t::CPU;
+    else if (srunTime == "GPU") runtimeTarget = zdl::DlSystem::Runtime_t::GPU;
+    else runtimeTarget = zdl::DlSystem::Runtime_t::CPU;
 
     // change the working directory to the cachedir
     chdir(scacheDir.c_str());
